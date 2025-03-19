@@ -28,7 +28,6 @@ function showSlides(n) {
 
 function prosiri() {
     var x = document.getElementById("linkovi");
-    var burger = document.getElementById("hamburger");
 
     // Prikaz/skrivanje navigacije
     if (x.style.display === "block") {
@@ -36,7 +35,12 @@ function prosiri() {
     } else {
         x.style.display = "block";
     }
-
-    // Dodavanje/uklanjanje klase za animaciju hamburger menija
-    burger.classList.toggle("active");
 }
+
+window.addEventListener("resize", function() {
+    var x = document.getElementById("linkovi");
+
+    if (window.innerWidth > 1000) {
+        x.style.display = "none"; 
+    }
+});
