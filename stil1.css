@@ -28,7 +28,7 @@ button, .red_novosti > article {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
-.nav, .burger_menu {
+.nav, #burger_menu {
     float: right;
     list-style-type: none;
     margin: 0;
@@ -39,7 +39,7 @@ button, .red_novosti > article {
 .nav > li {
     display: inline-block;
 }
-.nav > li a, .burger_menu > li a {
+.nav > li a, #burger_menu > li a {
     display: block;
     color: #232226;
     text-align: center;
@@ -300,7 +300,10 @@ footer ul {
 }
 
 #linkovi {
+    height: 0;
     display: none;
+    overflow: hidden;
+    transition: height 200ms;
 }
 hr {
     height:0.15vh;
@@ -308,15 +311,15 @@ hr {
     background-color: #232226;
 }
 
-.burger_menu {
+#burger_menu {
     background-color: #568EBF;
     float: none;
     padding: 2% 10%;
 }
-.burger_menu > li a {
+#burger_menu > li a {
     text-align: start;
 }
-.burger_menu > li a:hover {
+#burger_menu > li a:hover {
     background-color: #5178AF;
 }
 

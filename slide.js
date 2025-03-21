@@ -28,12 +28,21 @@ function showSlides(n) {
 
 function prosiri() {
     var x = document.getElementById("linkovi");
-
-    // Prikaz/skrivanje navigacije
-    if (x.style.display === "block") {
-        x.style.display = "none";
+    var list = document.getElementById("burger_menu");
+    x.style.height = list.offsetHeight + "px";
+    if (x.style.display === "block") { 
+        setTimeout(() => {
+            x.style.height = "0px";
+        }, 10);
+        setTimeout(() => {
+            x.style.display = "none";
+        }, 200);
     } else {
         x.style.display = "block";
+        x.style.height = list.offsetHeight + "px";
+        setTimeout(function(){
+            x.style.height = "auto";
+        }, 200);
     }
 }
 

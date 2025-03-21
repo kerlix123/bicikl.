@@ -3,13 +3,13 @@
     <head>
         <title>bicikl.</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="stil1.css">
+        <link rel="stylesheet" href="../stil1.css">
     </head>
     <body>
         <header>
-            <picture onclick="location.href='pocetna.html';">
-                <source srcset="elementi/b.png" media="(max-width: 800px)">
-                <img id="logo" src="elementi/bicikl.png">
+            <picture onclick="location.href='../pocetna.html';">
+                <source srcset="../elementi/b.png" media="(max-width: 800px)">
+                <img id="logo" src="../elementi/bicikl.png">
             </picture>
             <div class="menu-toggle" onclick="prosiri()">
                 <div class="bar"></div>
@@ -17,10 +17,10 @@
                 <div class="bar"></div>
             </div>
             <ul class="nav">
-                <li><a href="stranice/gdje_na_voznju.html">Gdje na vožnju?</a></li>
-                <li><a href="stranice/forum.html">Forum</a></li>
-                <li><a href="stranice/galerija.html">Galerija</a></li>
-                <li><a href="stranice/prijava.html">Prijava/Registracija</a></li>
+                <li><a href="gdje_na_voznju.html">Gdje na vožnju?</a></li>
+                <li><a href="forum.html">Forum</a></li>
+                <li><a href="galerija.html">Galerija</a></li>
+                <li><a href="#">Prijava/Registracija</a></li>
             </ul>
             <div class="clear"></div>
         </header>
@@ -28,21 +28,15 @@
             <div id="linkovi">
                 <hr>
                 <ul id="burger_menu">
-                    <li><a href="stranice/gdje_na_voznju.html">Gdje na vožnju?</a></li>
-                    <li><a href="stranice/forum.html">Forum</a></li>
-                    <li><a href="stranice/galerija.html">Galerija</a></li>
+                    <li><a href="gdje_na_voznju.html">Gdje na vožnju?</a></li>
+                    <li><a href="forum.html">Forum</a></li>
+                    <li><a href="galerija.html">Galerija</a></li>
                     <li><a href="#">Prijava/Registracija</a></li>
                 </ul>
             </div>
-            <div class="video_container">
-                <video id="bg_video" autoplay loop muted>
-                    <source src="videi/lele.mov" type="video/mp4">
-                    Your browser does not support HTML video.
-                </video>
-                <div class="video_overlay"></div>
-            </div>
+
             <div class="novosti">
-                <a href="stranice/novosti.html" class="naslov_a"><h1>Novosti</h1></a>
+                <h1>Novosti</h1>
                 <div class="red_novosti">
                     <article  onclick="location.href='#';">
                         <h3>Dobrodošli na bicikl.</h3>
@@ -54,7 +48,7 @@
                             <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 119.92 122.88"><title>schedule-calendar</title><path d="M108.68,122.88H11.24A11.28,11.28,0,0,1,0,111.64V22.55A11.28,11.28,0,0,1,11.24,11.31H21.61V25.14a12.35,12.35,0,0,0,4.67,9.61,14.55,14.55,0,0,0,18.31,0,12.35,12.35,0,0,0,4.67-9.61V11.31H70.2V25.14a12.35,12.35,0,0,0,4.67,9.61,14.55,14.55,0,0,0,18.31,0,12.35,12.35,0,0,0,4.67-9.61V11.31h10.83a11.3,11.3,0,0,1,11.24,11.24v89.09a11.27,11.27,0,0,1-11.24,11.24ZM83.58,56.77h16.1a2.07,2.07,0,0,1,2.06,2v13.4a2.07,2.07,0,0,1-2.06,2H83.58a2.06,2.06,0,0,1-2-2V58.82a2.05,2.05,0,0,1,2-2Zm-31.51,0H68.18a2.06,2.06,0,0,1,2,2v13.4a2.07,2.07,0,0,1-2,2H52.07a2.06,2.06,0,0,1-2-2V58.82a2.06,2.06,0,0,1,2-2Zm-31.84,0H36.34a2.06,2.06,0,0,1,2,2v13.4a2.07,2.07,0,0,1-2,2H20.23a2.06,2.06,0,0,1-2.05-2V58.82a2.05,2.05,0,0,1,2.05-2ZM83.58,85.26h16.1a2.07,2.07,0,0,1,2.06,2v13.4a2.06,2.06,0,0,1-2.06,2.05H83.58a2.06,2.06,0,0,1-2-2.05V87.31a2.06,2.06,0,0,1,2-2Zm-31.51,0H68.18a2.06,2.06,0,0,1,2,2v13.4a2.06,2.06,0,0,1-2,2.05H52.07a2.06,2.06,0,0,1-2-2.05V87.31a2.07,2.07,0,0,1,2-2Zm-31.84,0H36.34a2.06,2.06,0,0,1,2,2v13.4a2.06,2.06,0,0,1-2,2.05H20.23a2.06,2.06,0,0,1-2.05-2.05V87.31a2.06,2.06,0,0,1,2.05-2ZM78.6,4.45C78.6,2,81,0,84,0s5.43,2,5.43,4.45V25.14c0,2.46-2.42,4.45-5.43,4.45s-5.42-2-5.42-4.45V4.45ZM30,4.45C30,2,32.44,0,35.44,0s5.42,2,5.42,4.45V25.14c0,2.46-2.42,4.45-5.42,4.45S30,27.6,30,25.14V4.45ZM3.6,43.86v66.58a8.87,8.87,0,0,0,8.84,8.84h95a8.87,8.87,0,0,0,8.85-8.84V43.86Z"/></svg>
                         <p>15. ožujak 2025.</p>
                         </div>
-                        <img src="slike/petrovvrh.jpg">
+                        <img src="../slike/petrovvrh.jpg">
                     </article>
                     <article  onclick="location.href='#';">
                         <h3>Dobrodošli na bicikl.</h3>
@@ -66,7 +60,7 @@
                             <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 119.92 122.88"><title>schedule-calendar</title><path d="M108.68,122.88H11.24A11.28,11.28,0,0,1,0,111.64V22.55A11.28,11.28,0,0,1,11.24,11.31H21.61V25.14a12.35,12.35,0,0,0,4.67,9.61,14.55,14.55,0,0,0,18.31,0,12.35,12.35,0,0,0,4.67-9.61V11.31H70.2V25.14a12.35,12.35,0,0,0,4.67,9.61,14.55,14.55,0,0,0,18.31,0,12.35,12.35,0,0,0,4.67-9.61V11.31h10.83a11.3,11.3,0,0,1,11.24,11.24v89.09a11.27,11.27,0,0,1-11.24,11.24ZM83.58,56.77h16.1a2.07,2.07,0,0,1,2.06,2v13.4a2.07,2.07,0,0,1-2.06,2H83.58a2.06,2.06,0,0,1-2-2V58.82a2.05,2.05,0,0,1,2-2Zm-31.51,0H68.18a2.06,2.06,0,0,1,2,2v13.4a2.07,2.07,0,0,1-2,2H52.07a2.06,2.06,0,0,1-2-2V58.82a2.06,2.06,0,0,1,2-2Zm-31.84,0H36.34a2.06,2.06,0,0,1,2,2v13.4a2.07,2.07,0,0,1-2,2H20.23a2.06,2.06,0,0,1-2.05-2V58.82a2.05,2.05,0,0,1,2.05-2ZM83.58,85.26h16.1a2.07,2.07,0,0,1,2.06,2v13.4a2.06,2.06,0,0,1-2.06,2.05H83.58a2.06,2.06,0,0,1-2-2.05V87.31a2.06,2.06,0,0,1,2-2Zm-31.51,0H68.18a2.06,2.06,0,0,1,2,2v13.4a2.06,2.06,0,0,1-2,2.05H52.07a2.06,2.06,0,0,1-2-2.05V87.31a2.07,2.07,0,0,1,2-2Zm-31.84,0H36.34a2.06,2.06,0,0,1,2,2v13.4a2.06,2.06,0,0,1-2,2.05H20.23a2.06,2.06,0,0,1-2.05-2.05V87.31a2.06,2.06,0,0,1,2.05-2ZM78.6,4.45C78.6,2,81,0,84,0s5.43,2,5.43,4.45V25.14c0,2.46-2.42,4.45-5.43,4.45s-5.42-2-5.42-4.45V4.45ZM30,4.45C30,2,32.44,0,35.44,0s5.42,2,5.42,4.45V25.14c0,2.46-2.42,4.45-5.42,4.45S30,27.6,30,25.14V4.45ZM3.6,43.86v66.58a8.87,8.87,0,0,0,8.84,8.84h95a8.87,8.87,0,0,0,8.85-8.84V43.86Z"/></svg>
                         <p>15. ožujak 2025.</p>
                         </div>
-                        <img src="slike/petrovvrh.jpg">
+                        <img src="../slike/petrovvrh.jpg">
                     </article>
                     <article  onclick="location.href='#';">
                         <h3>Dobrodošli na bicikl.</h3>
@@ -78,87 +72,9 @@
                             <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 119.92 122.88"><title>schedule-calendar</title><path d="M108.68,122.88H11.24A11.28,11.28,0,0,1,0,111.64V22.55A11.28,11.28,0,0,1,11.24,11.31H21.61V25.14a12.35,12.35,0,0,0,4.67,9.61,14.55,14.55,0,0,0,18.31,0,12.35,12.35,0,0,0,4.67-9.61V11.31H70.2V25.14a12.35,12.35,0,0,0,4.67,9.61,14.55,14.55,0,0,0,18.31,0,12.35,12.35,0,0,0,4.67-9.61V11.31h10.83a11.3,11.3,0,0,1,11.24,11.24v89.09a11.27,11.27,0,0,1-11.24,11.24ZM83.58,56.77h16.1a2.07,2.07,0,0,1,2.06,2v13.4a2.07,2.07,0,0,1-2.06,2H83.58a2.06,2.06,0,0,1-2-2V58.82a2.05,2.05,0,0,1,2-2Zm-31.51,0H68.18a2.06,2.06,0,0,1,2,2v13.4a2.07,2.07,0,0,1-2,2H52.07a2.06,2.06,0,0,1-2-2V58.82a2.06,2.06,0,0,1,2-2Zm-31.84,0H36.34a2.06,2.06,0,0,1,2,2v13.4a2.07,2.07,0,0,1-2,2H20.23a2.06,2.06,0,0,1-2.05-2V58.82a2.05,2.05,0,0,1,2.05-2ZM83.58,85.26h16.1a2.07,2.07,0,0,1,2.06,2v13.4a2.06,2.06,0,0,1-2.06,2.05H83.58a2.06,2.06,0,0,1-2-2.05V87.31a2.06,2.06,0,0,1,2-2Zm-31.51,0H68.18a2.06,2.06,0,0,1,2,2v13.4a2.06,2.06,0,0,1-2,2.05H52.07a2.06,2.06,0,0,1-2-2.05V87.31a2.07,2.07,0,0,1,2-2Zm-31.84,0H36.34a2.06,2.06,0,0,1,2,2v13.4a2.06,2.06,0,0,1-2,2.05H20.23a2.06,2.06,0,0,1-2.05-2.05V87.31a2.06,2.06,0,0,1,2.05-2ZM78.6,4.45C78.6,2,81,0,84,0s5.43,2,5.43,4.45V25.14c0,2.46-2.42,4.45-5.43,4.45s-5.42-2-5.42-4.45V4.45ZM30,4.45C30,2,32.44,0,35.44,0s5.42,2,5.42,4.45V25.14c0,2.46-2.42,4.45-5.42,4.45S30,27.6,30,25.14V4.45ZM3.6,43.86v66.58a8.87,8.87,0,0,0,8.84,8.84h95a8.87,8.87,0,0,0,8.85-8.84V43.86Z"/></svg>
                         <p>15. ožujak 2025.</p>
                         </div>
-                        <img src="slike/petrovvrh.jpg">
+                        <img src="../slike/petrovvrh.jpg">
                     </article>
                 </div>
-                <button onclick="location.href='stranice/novosti.html';">Više novosti</button>
-            </div>
-            <div class="gdje_na_voznju">
-                <a href="stranice/gdje_na_voznju.html" class="naslov_a"><h1>Gdje na vožnju?</h1></a>
-                <form action="stranice/gdje_na_voznju.html">
-                    <div class="search_bar">
-                        <?xml version="1.0" encoding="utf-8"?><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="119.828px" height="50.88px" viewBox="0 0 119.828 122.88" enable-background="new 0 0 119.828 122.88" xml:space="preserve"><g><path d="M48.319,0C61.662,0,73.74,5.408,82.484,14.152c8.744,8.744,14.152,20.823,14.152,34.166 c0,12.809-4.984,24.451-13.117,33.098c0.148,0.109,0.291,0.23,0.426,0.364l34.785,34.737c1.457,1.449,1.465,3.807,0.014,5.265 c-1.449,1.458-3.807,1.464-5.264,0.015L78.695,87.06c-0.221-0.22-0.408-0.46-0.563-0.715c-8.213,6.447-18.564,10.292-29.814,10.292 c-13.343,0-25.423-5.408-34.167-14.152C5.408,73.741,0,61.661,0,48.318s5.408-25.422,14.152-34.166C22.896,5.409,34.976,0,48.319,0 L48.319,0z M77.082,19.555c-7.361-7.361-17.53-11.914-28.763-11.914c-11.233,0-21.403,4.553-28.764,11.914 C12.194,26.916,7.641,37.085,7.641,48.318c0,11.233,4.553,21.403,11.914,28.764c7.36,7.361,17.53,11.914,28.764,11.914 c11.233,0,21.402-4.553,28.763-11.914c7.361-7.36,11.914-17.53,11.914-28.764C88.996,37.085,84.443,26.916,77.082,19.555 L77.082,19.555z"/></g></svg>
-                        <input id="search_text" type="text" placeholder="Pretraži mjesta ili rute">
-                        <input class="search_button" type="submit" value="Pretraži">
-                    </div>
-                </form>
-            </div>
-            <div class="forum">
-                <a href="stranice/forum.html" class="naslov_a"><h1>Forum</h1></a>
-                <form action="stranice/forum.html">
-                    <div class="search_bar">
-                        <?xml version="1.0" encoding="utf-8"?><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="119.828px" height="50.88px" viewBox="0 0 119.828 122.88" enable-background="new 0 0 119.828 122.88" xml:space="preserve"><g><path d="M48.319,0C61.662,0,73.74,5.408,82.484,14.152c8.744,8.744,14.152,20.823,14.152,34.166 c0,12.809-4.984,24.451-13.117,33.098c0.148,0.109,0.291,0.23,0.426,0.364l34.785,34.737c1.457,1.449,1.465,3.807,0.014,5.265 c-1.449,1.458-3.807,1.464-5.264,0.015L78.695,87.06c-0.221-0.22-0.408-0.46-0.563-0.715c-8.213,6.447-18.564,10.292-29.814,10.292 c-13.343,0-25.423-5.408-34.167-14.152C5.408,73.741,0,61.661,0,48.318s5.408-25.422,14.152-34.166C22.896,5.409,34.976,0,48.319,0 L48.319,0z M77.082,19.555c-7.361-7.361-17.53-11.914-28.763-11.914c-11.233,0-21.403,4.553-28.764,11.914 C12.194,26.916,7.641,37.085,7.641,48.318c0,11.233,4.553,21.403,11.914,28.764c7.36,7.361,17.53,11.914,28.764,11.914 c11.233,0,21.402-4.553,28.763-11.914c7.361-7.36,11.914-17.53,11.914-28.764C88.996,37.085,84.443,26.916,77.082,19.555 L77.082,19.555z"/></g></svg>
-                        <input id="search_text" type="text" placeholder="Pretraži forum">
-                        <input class="search_button" type="submit" value="Pretraži">
-                    </div>
-                </form>
-                <button>Postavi pitanje na forum</button>
-            </div>
-            <div class="galerija">
-                <a href="stranice/galerija.html" class="naslov_a"><h1>Galerija</h1></a>
-
-
-                <!-- Slideshow container -->
-                <div class="slideshow-container">
-
-                    <!-- Full-width images with number and caption text -->
-                    <div class="mySlides fade">
-                    <div class="numbertext">1 / 5</div>
-                    <img src="slike/slika1.jpg" style="width:100%">
-                    <div class="text">Gradac</div>
-                    </div>
-                
-                    <div class="mySlides fade">
-                    <div class="numbertext">2 / 5</div>
-                    <img src="slike/slika2.jpg" style="width:100%">
-                    <div class="text">Laze Prnjavor</div>
-                    </div>
-                
-                    <div class="mySlides fade">
-                    <div class="numbertext">3 / 5</div>
-                    <img src="slike/slika3.jpg" style="width:100%">
-                    <div class="text">Klašnice</div>
-                    </div>
-
-                    <div class="mySlides fade">
-                    <div class="numbertext">4 / 5</div>
-                    <img src="slike/slika4.jpg" style="width:100%">
-                    <div class="text">Papuk - Petrov Vrh</div>
-                    </div>
-
-                    <div class="mySlides fade">
-                    <div class="numbertext">5 / 5</div>
-                    <div class="vidi_jos">
-                        <button onclick="location.href='stranice/galerija.html';">Vidi još</button>
-                    </div>
-                    </div>
-                
-                    <!-- Next and previous buttons -->
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                </div>
-                <br>
-                
-                <!-- The dots/circles -->
-                <div style="text-align:center">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                    <span class="dot" onclick="currentSlide(4)"></span>
-                    <span class="dot" onclick="currentSlide(5)"></span>
-                </div>
-
-
             </div>
         </main>
         <footer>
@@ -176,6 +92,6 @@
             </div>
             <div class="clear"></div>
         </footer>
-        <script src="slide.js"></script>
+        <script src="../slide.js"></script>
     </body>
 </html>
