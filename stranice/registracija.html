@@ -9,16 +9,20 @@
     <body>
         <div class="container">
             <img id="logo" src="../elementi/bicikl.png" onclick="location.href='../pocetna.html';">
-            <h3>Prijava</h3>
+            <h3>Registracija</h3>
             <form>
+                <label for="k_ime">Korisničko ime:</label>
+                <input type="text" name="k_ime" id="k_ime" placeholder="npr. Biciklist123">
                 <label for="email">Email:</label>
                 <input type="email" name="email" id="email" placeholder="Tvoj Email">
                 <label for="lozinka">Lozinka:</label>
                 <input type="password" name="lozinka" id="lozinka" placeholder="Lozinka"><br/>
-                <input type="button" value="Prijavi se" id="prijava"> 
+                <label for="lozinka">Lozinka ponovno:</label>
+                <input type="password" name="lozinka" id="lozinka" placeholder="Lozinka ponovno"><br/>
+                <input type="button" value="Registriraj se" id="prijava"> 
             </form>
             
-            <p>Nemaš račun? <a href="registracija.html">Registriraj se</a></p>
+            <p>Već imaš račun? <a href="prijava.html">Prijavi se</a></p>
         </div>
     </body>
 </html>

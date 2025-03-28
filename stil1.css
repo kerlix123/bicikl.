@@ -7,6 +7,7 @@
 }
 body {
     font-family: "Lexend", sans-serif;
+    background-color: #AEB5BF;
 }
 header {
     background-color: #568EBF;
@@ -83,7 +84,6 @@ button, .red_novosti > article {
 }
 .naslov_a:hover {
     color: #d4dbe5;
-    transition: color 0.3s ease-in-out;
 }
 h1 {
     color: #000000;
@@ -91,7 +91,7 @@ h1 {
 }
 
 
-.novosti, .gdje_na_voznju, .forum, .galerija {
+.novosti, .gdje_na_voznju, .forum, .galerija, .pitanja, .novost_wrapper {
     background-color: #AEB5BF;
     padding: 2% 10%; 
 }
@@ -108,7 +108,8 @@ h1 {
     width: 33%;
     font-weight: 300;
 }
-.novosti article:hover {
+.novosti article:hover, .pitanja article:hover {
+    cursor: pointer;
     background-color: #568ebf1b;
 }
 .novosti article > img {
@@ -119,13 +120,17 @@ h1 {
     width: 5%;
     margin: 0 1% 0 0;
 }
+.novost_wrapper svg {
+    width: 2%;
+    margin: 0 1% 0 0;
+}
 .ikona_tekst_wrapper, .search_bar {
     display: flex; 
     align-items: center; 
     gap: 3%;
     margin: 2% 0;
 }
-.novosti button, .forum button, .slideshow-container button {
+.novosti button, .forum button, .slideshow-container button, .galerija button {
     padding: 1.5%;
     background-color: #d4dbe5;
     border: none;
@@ -134,7 +139,7 @@ h1 {
     display: block;
     margin: 0 auto;
 }
-.novosti button:hover, .forum button:hover, .slideshow-container button:hover {
+.novosti button:hover, .forum button:hover, .slideshow-container button:hover, .galerija button:hover {
     background-color: #568ebf1b;
 }
 
@@ -169,6 +174,27 @@ h1 {
 
 .vidi_jos {
     padding: 30% 0;
+}
+
+.pitanja > article {
+    padding: 1%;
+    margin-bottom: 1%;
+    background-color: #d4dbe5;
+}
+.pitanja article svg {
+    width: 1%;
+}
+.pitanja article .ikona_tekst_wrapper {
+    gap: 1%;
+    margin: 1% 0;
+}
+
+#galerija_button {
+    margin: 1% 1% 1% 0;
+    display: inline-block;
+}
+.galerija .objavi p {
+    display: inline-block;
 }
 
 footer {
@@ -281,6 +307,17 @@ footer ul {
   animation-duration: 1.5s;
 }
 
+#galerija_novosti article {
+    position: relative;
+}
+
+#galerija_novosti .text {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    padding: 5%;
+}
+
 .menu-toggle {
     display: none;
     cursor: pointer;
@@ -323,12 +360,33 @@ hr {
     background-color: #5178AF;
 }
 
+#gdje_na_voznju, #forum, #galerija {
+    padding-bottom: 0;
+}
+
+#gdje_na_voznju_novosti, #galerija_novosti {
+    padding-top: 0;
+}
+
+.novost_wrapper article {
+    background-color: #d4dbe5;
+    padding: 2%;
+}
+.novost_wrapper article h1 {
+    text-align: center;
+}
+.novost_wrapper article img {
+    width: 25%;
+    margin: 0 37.5%;
+}
+.novost_wrapper article hr {
+    background-color: #d4dbe5;
+    height: 10px;
+}
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
 }
-
-
 
 @media screen and (max-width: 1000px) {
     .red_novosti {
