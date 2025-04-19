@@ -1,36 +1,13 @@
-let slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-    showSlides(slideIndex += n);
+const params = new URLSearchParams(window.location.search);
+if (params.get("pitanje") === "true") {
+    postavi_pitanje_prosiri();
 }
 
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    let dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {slideIndex = 1}    
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-}
-
-
-function prosiri() {
-    var x = document.getElementById("linkovi");
-    var list = document.getElementById("burger_menu");
-    x.style.height = list.offsetHeight + "px";
-    if (x.style.display === "block") { 
+function prosiri(id1) {
+    var x = document.getElementById(id1);
+    
+    if (x.style.height && x.style.height !== "0px") {
+        x.style.height = x.scrollHeight + "px";
         setTimeout(() => {
             x.style.height = "0px";
         }, 10);
@@ -39,10 +16,27 @@ function prosiri() {
         }, 200);
     } else {
         x.style.display = "block";
-        x.style.height = list.offsetHeight + "px";
-        setTimeout(function(){
+        x.style.height = "0px";
+        setTimeout(() => {
+            x.style.height = x.scrollHeight + "px";
+        }, 10);
+        setTimeout(() => {
             x.style.height = "auto";
         }, 200);
+    }
+}
+
+function burger_menu() {
+    prosiri("linkovi");
+}
+
+function postavi_pitanje_prosiri() {
+    var x = document.getElementById("postavi_pitanje");
+    
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
     }
 }
 

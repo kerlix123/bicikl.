@@ -12,7 +12,7 @@
                 <source srcset="../elementi/b.png" media="(max-width: 800px)">
                 <img id="logo" src="../elementi/bicikl.png">
             </picture>
-            <div class="menu-toggle" onclick="prosiri()">
+            <div class="menu-toggle" onclick="burger_menu()">
                 <div class="bar"></div>
                 <div class="bar"></div>
                 <div class="bar"></div>
@@ -38,23 +38,52 @@
             <div class="galerija" id="galerija">
                 <h1>Galerija</h1>
                 <div class="objavi">
-                    <button id="galerija_button">Objavi sliku</button>
+                    <button id="galerija_button" onclick="postavi_pitanje_prosiri()">Objavi sliku</button>
                     <p>Dnevni limit: 3 slike</p>
+                </div>
+                <div id="postavi_pitanje">
+                    <form action="galerija.html">
+                        <input type="text" placeholder="Naslov">
+                        <div id="ispod">
+                            <input type="file" id="prvi" value="Priloži datoteku" accept="image/png, image/jpeg">
+                            <input type="submit" id="drugi" value="Objavi sliku">
+                        </div>
+                    </form>
                 </div>
             </div>
             <div class="novosti" id="galerija_novosti">
                 <div class="red_novosti">
                     <article  onclick="location.href='#';">
                         <img src="../slike/petrovvrh.jpg">
+                        <div class="text">Petrov Vrh</div>
+                    </article>
+                    <article  onclick="location.href='#';">
+                        <img src="../slike/slika1.jpg">
+                        <div class="text">Novoselci</div>
+                    </article>
+                    <article  onclick="location.href='#';">
+                        <img src="../slike/slika7.jpg">
+                        <div class="text">NBD</div>
+                    </article>
+                </div>
+                <div class="red_novosti">
+                    <article  onclick="location.href='#';">
+                        <img src="../slike/slika2.jpg">
                         <div class="text">Laze Prnjavor</div>
                     </article>
                     <article  onclick="location.href='#';">
-                        <img src="../slike/petrovvrh.jpg">
-                        <div class="text">Laze Prnjavor</div>
+                        <img src="../slike/slika3.jpg">
+                        <div class="text">Klašnice</div>
                     </article>
                     <article  onclick="location.href='#';">
-                        <img src="../slike/petrovvrh.jpg">
-                        <div class="text">Laze Prnjavor</div>
+                        <img src="../slike/slika5.jpg">
+                        <div class="text">Kutjevo</div>
+                    </article>
+                </div>
+                <div class="red_novosti">
+                    <article  onclick="location.href='#';">
+                        <img src="../slike/slika6.jpg">
+                        <div class="text">Bučje</div>
                     </article>
                 </div>
             </div>
@@ -63,7 +92,7 @@
             <div class="footer_lijevo">
                 <ul>
                     <li id="bicikl">bicikl.</li>
-                    <li><a href="#">Izvori</a></li>
+                    <li><a href="izvori.html">Izvori</a></li>
                 </ul>
             </div>
             <div class="footer_desno">
